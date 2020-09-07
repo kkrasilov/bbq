@@ -1,0 +1,12 @@
+event1:
+  user: konstantin
+  title: The end of the word
+  address: Each
+  datetime: <%= 1.day.after.to_s(:db) %>
+
+event2:
+  user: alexandr
+  title: Megaparty
+  description: girls and boys invited
+  address: Nijnii Tahil, Bondina Park
+  datetime: <%= 10.day.after.to_s(:db) %>
