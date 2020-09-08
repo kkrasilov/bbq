@@ -1,10 +1,15 @@
 class User < ApplicationRecord
-  VALID_EMAIL_REGEX = /\A[a-z\d_+.\-]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
+  devise :database_authenticatable, :registerable, :recoverable, :rememberable, :validatable
 
   has_many :events
 
+  before_validation :set_name, on: :create
+
   validates :name, presence: true, length:  {maximum: 35}
-  validates :email, presence: true, length: {maximum: 255}
-  validates :email, uniqueness: true
-  validates :email, format: {with: VALID_EMAIL_REGEX}
+
+  private
+
+  def set_name
+    self.name = "Товарисч №#{rand(777)}" if self.name.blank?
+  end
 end
