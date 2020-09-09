@@ -14,3 +14,7 @@ group :development, :test do
   gem 'pry-rails'
 end
 
+group :production do
+  gem 'pg'
+end
+
