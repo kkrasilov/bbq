@@ -8,7 +8,6 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 gem 'puma', '~> 4.1'
 gem 'webpacker', '~> 4.0'
 
-
 group :development, :test do
   gem 'sqlite3', '~> 1.4'
   gem 'pry-rails'
@@ -17,4 +16,3 @@ end
 group :production do
   gem 'pg'
 end
-

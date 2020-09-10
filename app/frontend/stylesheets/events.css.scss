@@ -10,11 +10,14 @@
   width: 100%;
   z-index: -1;
 
-  top: 0; bottom: 0;
-  left: 0; right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 
   background-size: cover;
   background-position: center;
+  background-image: url("~images/event.jpg");
 
   filter: blur(5px);
   -webkit-filter: blur(5px);
@@ -23,20 +26,21 @@
   -ms-filter: blur(5px);
 }
 
-.event-description * {
+.event-description {
   color: white;
-}
 
-.event-description a {
-  color: #d0d0ff;
-}
+  a {
+    color: #d0d0ff;
+  }
 
-.event-description small {
-  color: #e0e0e0;
+  small {
+    color: #e0e0e0;
+  }
+
 }
 
 .event-info-inner {
-  background:rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .event-map {

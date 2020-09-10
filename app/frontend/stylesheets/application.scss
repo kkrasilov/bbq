@@ -1,5 +1,7 @@
 @import "~bootstrap/scss/bootstrap.scss";
-@import "events.css";
+@import "events.css.scss";
+@import "thumbnail.css.scss";
+@import "footer.css.scss";
 
 /* Buffers */
 .buffer-top {
@@ -22,22 +24,22 @@
   border-radius: 50%;
 }
 
-/* Thumbnails for events/index */
-.thumbnail {
-  position: relative;
-  background: transparent;
-  padding: 0;
-  overflow: hidden;
-  border-radius: 5px;
+/* logo */
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  letter-spacing: -1px;
+  font-weight: bold;
+
+  &:hover {
+    color: #eeeeee;
+    text-decoration: none;
+  }
 }
 
-.thumbnail h3 {
-  white-space: nowrap;
-  overflow: hidden;
-  margin-top: 0;
-  margin-bottom: .3em;
+.main {
+  min-height: 400px;
 }
 
-.thumbnail-inner {
-  padding: 20px 4px 4px;
-}
