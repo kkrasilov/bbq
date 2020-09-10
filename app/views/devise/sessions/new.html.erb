@@ -8,19 +8,19 @@
     </div>
 
     <div class="form-group">
-      <%= f.label :password, 'Пароль' %>
+      <%= f.label :password %>
       <%= f.password_field :password, autocomplete: "current-password", class: 'form-control' %>
     </div>
 
     <% if devise_mapping.rememberable? %>
       <div class="form-group form-check">
         <%= f.check_box :remember_me, class: 'form-check-input' %>
-        <%= f.label :remember_me, 'Запомнить меня', class: 'form-check-label' %>
+        <%= f.label :remember_me, class: 'form-check-label' %>
       </div>
     <% end %>
 
     <div class="actions">
-      <%= f.submit "Войти", class: 'btn btn-primary'%>
+      <%= f.submit t('links.sign_in'), class: 'btn btn-primary'%>
     </div>
     <%= render "devise/shared/links" %>
   </div>

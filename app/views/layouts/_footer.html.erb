@@ -1,6 +1,6 @@
 <footer class="footer text-center border-top">
   <small>
-    The <%= link_to "«BBQ!»", root_path %>
-    by <a href="https://github.com/kkrasilov/" rel="noopener noreferrer" target="_blank">Konstantin Krasilov</a>
+    &copy <%= link_to "«" + t('app.name') + "»", root_path %>
+    <%= link_to t('app.company'), "https://github.com/kkrasilov/", target: "_blank", rel: "noreferrer" %>
   </small>
 </footer>

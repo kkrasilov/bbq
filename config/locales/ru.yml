@@ -1,0 +1,50 @@
+ru:
+  activerecord:
+    models:
+      user: 'Пользователь'
+      event: 'Событие'
+
+    attributes:
+      user:
+        email: 'Email'
+        name: 'Имя'
+        password: 'Пароль'
+        password_confirmation: 'Подтверждение пароля'
+      event:
+        title: 'Название'
+        address: 'Место проведения'
+        datetime: 'Дата и время'
+        description: 'Описание'
+
+  controllers:
+    events:
+      created: 'Вы создали новое мероприятие'
+      updated: 'Вы обновили мероприятие'
+      destroyed: 'Вы удалили мероприятие :('
+    users:
+      updated: 'Вы обновили свой профиль'
+
+  app:
+    name: 'Шашлыки'
+    company: 'Константин Красилов'
+
+  links:
+    register: 'Зарегистрироваться'
+    sign_in: 'Войти'
+    forgot_password: 'Забыли пароль?'
+    send_me: 'Отправить мне инструкции по сбросу пароля'
+    change: 'Изменить'
+    сreate_event: 'Создать событие'
+    save: 'Сохранить'
+    to_return: 'Вернуться'
+    log_off: 'Выйти'
+    сhange_password: 'Сменить пароль'
+    edit_profile: 'Редактировать профиль'
+    update: 'Обновить'
+    delete: 'Удалить'
+
+  questions:
+    are_you_sure: 'Вы уверены?'
+
+  devise:
+    characters_minimum: 'минимальное количесвто символов'
