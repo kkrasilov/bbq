@@ -1,4 +1,4 @@
-<h2 class="border-bottom text-dark pb-2">Редактировать профиль</h2>
+<h2 class="border-bottom text-dark pb-2"><%= t('heading.еdit_password') %></h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: {method: :put}) do |f| %>
   <%= render partial: 'partials/form_errors', locals: {model: @user} %>
@@ -29,7 +29,7 @@
     </div>
 <% end %>
 
-<h3 class="pt-4">Удалить акаунт?</h3>
+<h3 class="pt-4"><%= t('heading.delete_account') %></h3>
 
 <%= button_to t('links.delete_profile'), registration_path(resource_name),
               data: {confirm: t('questions.are_you_sure')},

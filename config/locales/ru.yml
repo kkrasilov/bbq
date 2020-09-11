@@ -48,3 +48,24 @@ ru:
 
   devise:
     characters_minimum: 'минимальное количесвто символов'
+
+  heading:
+    forgot_your_password: 'Забыли свой пароль?'
+    еdit_profile: 'Редактировать профиль'
+    delete_account: 'Удалить аккаунт?'
+    registration: 'Регистрация'
+    come_in: 'Войти'
+    editing_event: 'Редактирование события'
+    event: 'События'
+    new_event: 'Новое событие'
+    еdit_password: 'Редактировать пароль'
+    organized: 'Организовал:'
+
+  inscription:
+    user_has_not_yet_organized_any_events: 'Пользователь пока не организовал ни одного события'
+
+  errors:
+    one: "В вашей форме %{count} ошибка"
+    few: "В вашей форме %{count} ошибки"
+    many: "В вашей форме %{count} ошибок"
+    
