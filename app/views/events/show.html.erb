@@ -18,9 +18,19 @@
               <%= link_to t('links.change'), edit_event_path(@event), class: 'btn btn-primary' %>
               <%= link_to t('links.delete_event'), event_path(@event),
                           data: {confirm: t('questions.are_you_sure')},
-                          method: :delete, class: 'btn btn-danger'  %>
+                          method: :delete, class: 'btn btn-danger' %>
             </div>
           <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-8">
+      <div class="event-comments buffer-top">
+        <div class="buffer-both">
+          <%= render partial: 'comments/comment', collection: @event.comments %>
         </div>
       </div>
     </div>
