@@ -41,7 +41,7 @@ ru:
     сhange_password: 'Сменить пароль'
     edit_profile: 'Редактировать профиль'
     update: 'Обновить'
-    delete: 'Удалить'
+    delete_profile: 'Удалить мой аккаунт'
 
   questions:
     are_you_sure: 'Вы уверены?'
