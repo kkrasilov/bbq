@@ -48,3 +48,8 @@ ru:
 
   devise:
     characters_minimum: 'минимальное количесвто символов'
+    
+  errors:
+    one: 'ошибка'
+    few: 'ошибки'
+    many: 'ошибок'
