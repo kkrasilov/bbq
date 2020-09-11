@@ -42,6 +42,7 @@ ru:
     edit_profile: 'Редактировать профиль'
     update: 'Обновить'
     delete_profile: 'Удалить мой аккаунт'
+    delete_event: 'Удалить событие'
 
   questions:
     are_you_sure: 'Вы уверены?'
