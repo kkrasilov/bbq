@@ -3,6 +3,10 @@ module ApplicationHelper
     'user.png'
   end
 
+  def fa_icon(icon_class)
+    content_tag 'span', '', class: "fa fa-#{icon_class} text-danger"
+  end
+
   def bootstrap_class_for flash_type
     {success: "alert-success", error: "alert-danger", alert: "alert-warning", notice: "alert-info"}.stringify_keys[flash_type.to_s] || flash_type.to_s
   end

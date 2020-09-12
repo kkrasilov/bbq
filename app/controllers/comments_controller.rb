@@ -12,7 +12,7 @@ class CommentsController < ApplicationController
       render 'events/show', alert: I18n.t('controllers.comments.error')
     end
   end
-  end
+
 
   def destroy
     message = {notice: I18n.t('controllers.comments.destroyed')}
@@ -37,6 +37,6 @@ class CommentsController < ApplicationController
   end
 
   def comment_params
-    params.require(:comment).permit(:body, user_name)
+    params.require(:comment).permit(:body, :user_name)
   end
 end
