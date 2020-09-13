@@ -63,6 +63,7 @@ ru:
 
   inscription:
     user_has_not_yet_organized_any_events: 'Пользователь пока не организовал ни одного события'
+    or: 'или'
 
   errors:
     one: "В вашей форме %{count} ошибка"
