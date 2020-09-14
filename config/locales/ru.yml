@@ -42,6 +42,7 @@ ru:
     edit_profile: 'Редактировать профиль'
     update: 'Обновить'
     delete_profile: 'Удалить мой аккаунт'
+    delete_event: 'Удалить событие'
 
   questions:
     are_you_sure: 'Вы уверены?'
@@ -69,4 +70,4 @@ ru:
     one: "В вашей форме %{count} ошибка"
     few: "В вашей форме %{count} ошибки"
     many: "В вашей форме %{count} ошибок"
-    
+
