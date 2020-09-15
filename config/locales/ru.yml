@@ -88,8 +88,11 @@ ru:
       destroy_confirm: 'Вы уверены, что хотите удалить этот комменатрий?'
       body: 'Комментарий'
       send: 'Отправить'
+      user_name: 'Ваше имя'
 
   subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
       subscribe: 'Подписаться'
+      user_name: 'Ваше имя'
+      user_email: 'Ваш email'
