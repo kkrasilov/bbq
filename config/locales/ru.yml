@@ -62,6 +62,7 @@ ru:
     forgot_your_password: 'Забыли свой пароль?'
     еdit_profile: 'Редактировать профиль'
     delete_account: 'Удалить аккаунт?'
+    delete_event: 'Удалить собыите?'
     registration: 'Регистрация'
     come_in: 'Войти'
     editing_event: 'Редактирование события'
@@ -69,6 +70,9 @@ ru:
     new_event: 'Новое событие'
     еdit_password: 'Редактировать пароль'
     organized: 'Организовал:'
+    calling: 'Зовет'
+    i_will_go: 'Я пойду!'
+    will_go: 'Пойдут!'
 
   inscription:
     user_has_not_yet_organized_any_events: 'Пользователь пока не организовал ни одного события'
@@ -82,7 +86,10 @@ ru:
   comments:
     comment:
       destroy_confirm: 'Вы уверены, что хотите удалить этот комменатрий?'
+      body: 'Комментарий'
+      send: 'Отправить'
 
   subscriptions:
     subscription:
       destroy_confirm: 'Вы уверены, что хотите удалить эту подписку?'
+      subscribe: 'Подписаться'
