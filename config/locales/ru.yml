@@ -15,12 +15,17 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+      subscription:
+        user_email: 'Email'
+
     errors:
       models:
         subscription:
           attributes:
             base:
               user_created_event: 'Пользователь не может подписаться на свое событие'
+            user_email:
+              user_email_exists: 'Пользователь с таким email уже существует, пожалуйста авторизуйтесь!'
 
   controllers:
     events:
