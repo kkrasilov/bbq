@@ -11,6 +11,11 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 gem 'puma', '~> 4.1'
 gem 'webpacker', '~> 4.0'
 
+gem 'carrierwave'
+gem 'rmagick'
+gem 'fog-aws'
+
+
 group :development, :test do
   gem 'sqlite3', '~> 1.4'
   gem 'pry-rails'

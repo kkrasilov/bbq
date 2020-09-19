@@ -9,6 +9,7 @@ class User < ApplicationRecord
 
   after_commit :link_subscriptions, on: :create
 
+  mount_uploader :avatar, AvatarUploader
 
   def link_subscriptions
     Subscription.where(user_id: nil, user_email: self.email)
