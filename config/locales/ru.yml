@@ -140,3 +140,11 @@ ru:
       event: 'Событие'
       datetime: 'Состоится'
       owner: 'Организатор'
+    photo:
+      title: 'Новая фотография'
+      author: 'Автор'
+      event: 'Событие'
+      will_take_place: 'Состоится'
+      consisted: 'Состоялось'
+      owner: 'Организатор'
+      photo: 'Фотография'
