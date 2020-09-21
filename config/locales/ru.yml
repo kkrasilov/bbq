@@ -100,6 +100,7 @@ ru:
     i_will_go: 'Я пойду!'
     will_go: 'Пойдут!'
     privacy_policy: 'Политика конфиденциальности'
+    change_password: 'Изменить пароль'
 
   inscription:
     user_has_not_yet_organized_any_events: 'Пользователь пока не организовал ни одного события'
