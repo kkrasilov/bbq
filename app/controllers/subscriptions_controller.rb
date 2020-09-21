@@ -37,6 +37,6 @@ class SubscriptionsController < ApplicationController
   end
 
   def subscription_params
-    params.fetch(:subscription, {}).permit(:user_email, :user_name)
+    params.fetch(:subscription, {}).permit(:user_email, :user_name, :access_email)
   end
 end

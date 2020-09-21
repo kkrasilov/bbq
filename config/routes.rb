@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root "events#index"
+  get "pages/politika"
 
   resources :events do
     resources :comments, only: %i[create destroy]

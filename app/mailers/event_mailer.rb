@@ -2,6 +2,7 @@ class EventMailer < ApplicationMailer
   def subscription(event, subscription)
     @email = subscription.user_email
     @name = subscription.user_name
+    @access_email = subscription.access_email
     @event = event
 
     mail to: event.user.email, subject: default_i18n_subject(event: event.title)

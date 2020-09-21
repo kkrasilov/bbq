@@ -2,6 +2,8 @@ class Subscription < ApplicationRecord
   belongs_to :event
   belongs_to :user, optional: true
 
+  before_validation :access_email
+
   validates :user_name, presence: true, unless: -> { user.present? }
   validates :user_email, presence: true, format: /\A[a-zA-Z0-9\-_.]+@[a-zA-Z0-9\-_.]+\z/, unless: -> { user.present? }
 
@@ -22,6 +24,14 @@ class Subscription < ApplicationRecord
   def user_email
     if user.present?
       user.email
+    else
+      super
+    end
+  end
+
+  def access_email
+    if user.present?
+      user.access_email
     else
       super
     end
