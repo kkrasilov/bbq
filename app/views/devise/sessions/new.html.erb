@@ -20,8 +20,10 @@
     <% end %>
 
     <div class="actions">
-      <%= f.submit t('links.sign_in'), class: 'btn btn-primary'%>
+      <%= f.submit t('links.sign_in'), class: 'btn btn-primary' %>
     </div>
-    <%= render "devise/shared/links" %>
+    <div class="pt-2">
+      <%= render "devise/shared/links" %>
+    </div>
   </div>
 <% end %>
