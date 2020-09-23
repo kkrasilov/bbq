@@ -14,7 +14,7 @@ gem 'webpacker', '~> 4.0'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'fog-aws'
-
+gem "letter_opener", :group => :development
 
 group :development, :test do
   gem 'sqlite3', '~> 1.4'

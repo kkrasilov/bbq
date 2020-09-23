@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'partybbq366@gmail.com'
+  default from: Rails.application.credentials.mail[:name]
   layout 'mailer'
 end
