@@ -8,12 +8,12 @@
     <div class="form-group">
       <%= f.label :password %>
       <small class="form-text text-muted"><%= t('devise.characters_minimum') %> <%= @minimum_password_length %></small>
-      <%= f.password_field :password, autofocus: true %>
+      <%= f.password_field :password, autofocus: true, class: 'form-control'%>
     </div>
 
     <div class="form-group">
       <%= f.label :password_confirmation %>
-      <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+      <%= f.password_field :password_confirmation, autocomplete: "new-password", class: 'form-control' %>
     </div>
 
     <div class="actions">
