@@ -20,6 +20,7 @@ ru:
         address: 'Место проведения'
         datetime: 'Дата и время'
         description: 'Описание'
+        pincode: 'Пин-код доступа'
 
       subscription:
         user_email: 'Email'
@@ -41,6 +42,7 @@ ru:
       created: 'Вы создали новое мероприятие'
       updated: 'Вы обновили мероприятие'
       destroyed: 'Вы удалили мероприятие :('
+      wrong_pincode: 'Неверный пин-код!'
     users:
       updated: 'Вы обновили свой профиль'
     comments:
@@ -77,6 +79,7 @@ ru:
     delete_profile: 'Удалить мой аккаунт'
     delete_event: 'Удалить событие'
     load: 'Загрузить'
+    to_home: 'На главную'
 
   questions:
     are_you_sure: 'Вы уверены?'
@@ -101,6 +104,7 @@ ru:
     will_go: 'Пойдут!'
     privacy_policy: 'Политика конфиденциальности'
     change_password: 'Изменить пароль'
+    access_only_by_pin_code: 'Доступ только по пин-коду'
 
   inscription:
     user_has_not_yet_organized_any_events: 'Пользователь пока не организовал ни одного события'
@@ -108,6 +112,7 @@ ru:
     i_agree: 'Я согласен'
     privacy_policy_manifest: 'Наш сайт может использовать Вашу почту для показа другим пользователям, в
     их личных письмах, при подписке или добавлении фотографии к событию!'
+    pincode: 'Пин-код'
 
   errors:
     one: "В вашей форме %{count} ошибка"
