@@ -1,4 +1,5 @@
 require("@rails/ujs").start()
+require("./maps");
 import 'bootstrap/dist/js/bootstrap'
 
 import '../stylesheets/application.scss'
