@@ -1,6 +1,6 @@
 <div class="event">
   <div class="event-info row">
-    <div class="col-md-8">
+    <div class="col-md-12">
       <%= content_tag 'div', '', class: 'event-background', style: "background-image: url(#{event_photo(@event)})" %>
 
       <div class="event-info-inner row">
@@ -21,14 +21,11 @@
         </div>
       </div>
     </div>
-    <div class="col-4">
-      <div id="map" data-address="<%= @event.address %>"></div>
-    </div>
   </div>
-
   <div class="row">
     <div class="col-md-8">
-      <div class="event-photos-gallery">
+      <div id="map" data-address="<%= @event.address %>"></div>
+      <div class="event-photos-gallery pt-2">
         <%= render partial: 'photos/photo', collection: @event.photos.except(@new_photo) %>
       </div>
       <div class="event-photo-form">
