@@ -1,6 +1,7 @@
 require("@rails/ujs").start()
 require("./maps");
 require("./lightbox.min");
+require("./datepicker.min");
 import 'bootstrap/dist/js/bootstrap'
 
 import '../stylesheets/application.scss'
