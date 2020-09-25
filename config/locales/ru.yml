@@ -83,6 +83,7 @@ ru:
 
   questions:
     are_you_sure: 'Вы уверены?'
+    delete_photo: 'Удалить фотографию?'
 
   devise:
     characters_minimum: 'минимальное количесвто символов'

@@ -25,10 +25,10 @@
   <div class="row">
     <div class="col-md-8">
       <div id="map" data-address="<%= @event.address %>"></div>
-      <div class="event-photos-gallery pt-2">
+      <div class="event-photos-gallery pt-2 border-bottom">
         <%= render partial: 'photos/photo', collection: @event.photos.except(@new_photo) %>
       </div>
-      <div class="event-photo-form">
+      <div class="event-photo-form pt-2">
         <%= render partial: 'photos/form', locals: {photo: @new_photo || @event.photos.build} %>
       </div>
       <div class="event-comments buffer-top">
