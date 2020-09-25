@@ -1,7 +1,7 @@
 <h2 class="border-bottom text-dark pb-2"><%= t('heading.come_in') %></h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="col-4">
+  <div class="col-md-4">
     <div class="form-group">
       <%= f.label :email %>
       <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'form-control' %>

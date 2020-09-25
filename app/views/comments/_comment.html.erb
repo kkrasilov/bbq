@@ -1,5 +1,4 @@
-<div class="buffer-bottom">
-  <p><%= comment.body %></p>
+<div class="col-md-10 buffer-bottom pt-4">
   <p>
     <span>
       <% if comment.user.present? %>
@@ -8,7 +7,7 @@
         <em><strong><%= comment.user_name %></strong></em>
       <% end %>
     </span>
-    <em><%= l(comment.created_at, format: :short) %></em>
+    <small class="text-secondary font-weight-bold"><%= l(comment.created_at, format: :short) %></small>
     <% if current_user_can_edit?(comment) %>
       <%= link_to(
               fa_icon('trash'), event_comment_path(comment.event, comment),
@@ -16,5 +15,8 @@
           ) %>
     <% end %>
   </p>
+  <div class="border rounded p-3 comment-body">
+    <%= comment.body %>
+  </div>
 </div>
 
