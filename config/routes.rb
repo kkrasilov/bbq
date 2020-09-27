@@ -10,4 +10,5 @@ Rails.application.routes.draw do
     post :show, on: :member
   end
   resources :users, only: %i[show edit update]
+  get '/404', to: "errors#not_found"
 end
