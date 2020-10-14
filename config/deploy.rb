@@ -2,13 +2,13 @@
 lock "~> 3.14.1"
 
 set :application, "bbq"
-set :repo_url, "git@github.com:kkrasilov/bbq.git"
+set :repo_url, "https://github.com/kkrasilov/bbq.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/home/deploy/www"
+set :deploy_to, "/home/deploy/apps/bbq"
 
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh

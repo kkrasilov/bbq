@@ -19,6 +19,12 @@ gem "letter_opener", :group => :development
 group :development, :test do
   gem 'sqlite3', '~> 1.4'
   gem 'pry-rails'
+
+  gem 'capistrano', '~> 3.14.1'
+  gem 'capistrano-rails', '~> 1.6.1'
+  gem 'capistrano-passenger', '~> 0.2'
+  gem 'capistrano-rvm', '~> 0.1.2'
+  gem 'capistrano-bundler', '~> 2.0.1'
 end
 
 group :production do
