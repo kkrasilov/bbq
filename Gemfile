@@ -20,6 +20,8 @@ gem "letter_opener", :group => :development
 group :development, :test do
   gem 'sqlite3', '~> 1.4'
   gem 'pry-rails'
+  gem 'rspec-rails', '~> 4.0.1'
+  gem 'factory_bot_rails'
 
   gem 'capistrano', '~> 3.14.1'
   gem 'capistrano-rails', '~> 1.6.1'
