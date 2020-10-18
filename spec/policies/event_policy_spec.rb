@@ -7,6 +7,10 @@ RSpec.describe EventPolicy do
   subject { EventPolicy }
 
   context 'user is anonymous' do
+    permissions :show? do
+      it { is_expected.to permit(nil, Event) }
+    end
+
     permissions :edit?, :update?, :destroy? do
       it { is_expected.not_to permit(nil, Event) }
     end
