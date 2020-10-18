@@ -1,10 +1,10 @@
 class EventPolicy < ApplicationPolicy
   def show?
-    user.present?
+    true
   end
 
-  def edit?
-    update?
+  def create?
+    user.present?
   end
 
   def update?
