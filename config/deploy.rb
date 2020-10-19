@@ -3,7 +3,7 @@ lock "~> 3.14.1"
 Rake::Task["deploy:assets:backup_manifest"].clear_actions
 
 set :application, "bbq"
-set :repo_url, "https://github.com/kkrasilov/bbq.git"
+set :repo_url, "git@github.com:kkrasilov/bbq.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
