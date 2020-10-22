@@ -11,6 +11,7 @@ gem 'rails-i18n', '~> 6.0.0'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 gem 'puma', '~> 4.1'
 gem 'webpacker', '~> 4.0'
+gem 'resque', '~> 2.0'
 
 gem 'carrierwave'
 gem 'rmagick'
