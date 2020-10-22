@@ -29,6 +29,7 @@ group :development, :test do
   gem 'capistrano-passenger', '~> 0.2'
   gem 'capistrano-rvm', '~> 0.1.2'
   gem 'capistrano-bundler', '~> 2.0.1'
+  gem 'capistrano-resque', '~> 0.2.3', require: false
 end
 
 group :production do
