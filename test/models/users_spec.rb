@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  describe '.find_for_facebook_oauth' do
+  describe '.find_for_oauth' do
     # Создаём объект :access_token
     # В него записываем те данные, которые мы доставали их хеша
     let(:access_token) do

@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   devise :database_authenticatable, :registerable, :recoverable, :rememberable, :validatable,
-         :omniauthable, omniauth_providers: [:facebook]
+         :omniauthable, omniauth_providers: %i[facebook vkontakte]
 
   has_many :events, dependent: :destroy
   has_many :comments, dependent: :destroy
@@ -12,10 +12,11 @@ class User < ApplicationRecord
 
   mount_uploader :avatar, AvatarUploader
 
-  def self.find_for_facebook_oauth(access_token)
+  def self.find_for_oauth(access_token)
     # Достаём email из токена
     name = access_token.info.name
     email = access_token.info.email
+    email ||= "change-me-#{access_token.info.first_name}-id#{access_token.uid}@#{access_token.provider}.com"
     user = where(email: email).first
 
     # Возвращаем, если нашёлся
@@ -25,10 +26,16 @@ class User < ApplicationRecord
 
     provider = access_token.provider
     id = access_token.extra.raw_info.id
-    url = "https://facebook.com/#{id}"
 
     # Теперь ищем в базе запись по провайдеру и урлу
     # Если есть, то вернётся, если нет, то будет создана новая
+    case provider
+    when 'facebook'
+      url = "https://facebook.com/#{id}"
+    when 'vkontakte'
+       url = "https://vk.com/id#{id}"
+    end
+
     where(url: url, provider: provider).first_or_create! do |user|
       # Если создаём новую запись, прописываем email и пароль
       user.name = name

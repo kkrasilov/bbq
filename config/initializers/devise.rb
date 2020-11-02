@@ -298,6 +298,9 @@ Devise.setup do |config|
   config.omniauth :facebook, Rails.application.credentials.omniauth[:omniauth_facebook_id],
                   Rails.application.credentials.omniauth[:omniauth_facebook_secret]
 
+  config.omniauth :vkontakte, Rails.application.credentials.omniauth[:omniauth_vkontakte_id],
+                  Rails.application.credentials.omniauth[:omniauth_vkontakte_secret]
+
   # ==> Turbolinks configuration
   # If your app is using Turbolinks, Turbolinks::Controller needs to be included to make redirection work correctly:
   #
