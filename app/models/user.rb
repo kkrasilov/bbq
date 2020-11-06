@@ -6,7 +6,7 @@ class User < ApplicationRecord
   has_many :comments, dependent: :destroy
   has_many :subscriptions, dependent: :destroy
 
-  validates :name, presence: true, length:  {maximum: 35}
+  validates :name, presence: true, length: {maximum: 35}
 
   after_commit :link_subscriptions, on: :create
 
@@ -16,7 +16,7 @@ class User < ApplicationRecord
     # Достаём email из токена
     name = access_token.info.name
     email = access_token.info.email
-    email ||= "change-me-#{access_token.info.first_name}-id#{access_token.uid}@#{access_token.provider}.com"
+
     user = where(email: email).first
 
     # Возвращаем, если нашёлся
@@ -29,17 +29,21 @@ class User < ApplicationRecord
 
     # Теперь ищем в базе запись по провайдеру и урлу
     # Если есть, то вернётся, если нет, то будет создана новая
+
     case provider
     when 'facebook'
       url = "https://facebook.com/#{id}"
+      avatar_url = access_token.info.image.gsub('http', 'https')
     when 'vkontakte'
-       url = "https://vk.com/id#{id}"
+      url = "https://vk.com/id#{id}"
+      avatar_url = access_token.extra.raw_info.photo_400_orig
     end
 
     where(url: url, provider: provider).first_or_create! do |user|
       # Если создаём новую запись, прописываем email и пароль
       user.name = name
       user.email = email
+      user.remote_avatar_url = avatar_url
       user.password = Devise.friendly_token.first(16)
     end
   end
