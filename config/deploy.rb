@@ -4,6 +4,7 @@ Rake::Task["deploy:assets:backup_manifest"].clear_actions
 
 set :application, "bbq"
 set :repo_url, "git@github.com:kkrasilov/bbq.git"
+set :branch, ENV['BRANCH'] if ENV['BRANCH']
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

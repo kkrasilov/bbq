@@ -81,6 +81,7 @@ ru:
     load: 'Загрузить'
     to_home: 'На главную'
     to_home_errors: 'на главную страницу'
+    sign_in_with: 'Войти с помощью %{provider}'
 
   questions:
     are_you_sure: 'Вы уверены?'
