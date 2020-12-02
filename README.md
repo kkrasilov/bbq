@@ -35,7 +35,7 @@ $ rails db:migrate
 
 ## Дополнительные функции
 
-Вы можете использовать в приложении [Яндекс Карты](https://yandex.ru/dev/maps/), [OmniAuth Facebook](https://developers.facebook.com/), [OmniAuth Vkontakte](https://vk.com/dev)
+Вы можете использовать в приложении [Яндекс Карты](https://yandex.ru/dev/maps/), [OmniAuth Facebook (раздел Create Facebook app)](https://dev.to/nkemjiks/implementing-facebook-authentication-with-devise-for-your-rails-6-app-1p3b), [OmniAuth Vkontakte](https://vk.com/dev)
 Для этого нужно получить соответствующие ключи и прописать их в credentials, как показано ниже.
 ```
 $ rm -rf config/credentials.yml.enc
